@@ -1,0 +1,158 @@
+body {
+    font-size: 16px;
+}
+
+.centralized {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.centerLogin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.title-input {
+    width: 200px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.heading-title {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.date-input {
+    width: 100%;
+}
+
+.personal-image {
+    text-align: center;
+}
+
+.personal-image input[type="file"] {
+    display: none;
+}
+
+.personal-figure {
+    position: relative;
+    width: 170px;
+    height: 200px;
+    margin-bottom: 0;
+}
+
+.personal-avatar {
+    cursor: pointer;
+    width: inherit;
+    height: inherit;
+    box-sizing: border-box;
+    border-radius: var(--bs-border-radius);
+    border: var(--bs-border-radius);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: all ease-in-out .3s;
+}
+
+.personal-avatar:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.personal-figcaption {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: inherit;
+    height: inherit;
+    border: var(--bs-border-radius);
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all ease-in-out .3s;
+}
+
+.personal-figcaption-visible {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+.personal-figcaption:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.personal-figcaption > img {
+    margin-top: 33px;
+    width: 50px;
+    height: 50px;
+}
+
+.trash-icon {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+}
+
+.ql-container.ql-snow {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-bottom-left-radius: var(--bs-border-radius);
+    border-bottom-right-radius: var(--bs-border-radius);
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+.ql-toolbar.ql-snow {
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-top-left-radius: var(--bs-border-radius);
+    border-top-right-radius: var(--bs-border-radius);
+    box-sizing: border-box;
+    font-family: inherit;
+    padding: 8px;
+}
+
+.ql-editor:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.react-datepicker__input-container {
+    line-height: 2.1;
+}
+
+.delete-btn {
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 1.2em;
+    position: absolute;
+    right: 7px;
+    top: 2px;
+}
+
+.error-modal {
+    color: red;
+}
+
+.error-modal-header {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-bottom: 1px solid #d6d8d9;
+}
+
+.date-feedback {
+    font-size: .875em;
+}
+
+.date-input-invalid {
+    border-color: red;
+}
