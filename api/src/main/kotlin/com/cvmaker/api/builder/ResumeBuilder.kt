@@ -59,13 +59,13 @@ private fun addTitle(document: Document, resume: Resume) {
 private fun addData(table: Table, resume: Resume, imageContent: ByteArray?) {
     addPersonalData(table, resume.contact, imageContent)
 
+    addSummary(table, resume.summary)
     resume.skills?.let {
         addSkills(table, resume.skills)
     }
     resume.experiences.withNotNullOrEmpty { addExperience(table, this) }
     resume.educations.withNotNullOrEmpty { addEducation(table, this) }
     resume.certifications.withNotNullOrEmpty { addCertification(table, this) }
-    addSummary(table, resume.summary)
     resume.languages.withNotNullOrEmpty { addLanguages(table, this) }
 }
 
