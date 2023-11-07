@@ -39,14 +39,14 @@ val listCssApplier = ICssApplier { _, stylesContainer, tagWorker ->
     container.setProperty(LIST_SYMBOL, Text(SYMBOL))
     container.setProperty(LIST_SYMBOL_INDENT, 5f)
     container.setProperty(RENDERING_MODE, RenderingMode.DEFAULT_LAYOUT_MODE)
-    container.setProperty(MARGIN_LEFT, UnitValue.createPointValue(15f))
+    container.setProperty(MARGIN_LEFT, UnitValue.createPointValue(10f))
     stylesContainer.styles = emptyMap()
 }
 
 val paragraphCssApplier = ICssApplier {_, stylesContainer, tagWorker ->
     val container = tagWorker.elementResult
     container.setProperty(RENDERING_MODE, RenderingMode.DEFAULT_LAYOUT_MODE)
-    container.setProperty(MARGIN_LEFT, UnitValue.createPointValue(10f))
+    container.setProperty(MARGIN_LEFT, UnitValue.createPointValue(5f))
     stylesContainer.styles = emptyMap()
 }
 
