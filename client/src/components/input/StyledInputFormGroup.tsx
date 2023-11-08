@@ -18,7 +18,7 @@ const StyledInputFormGroup: React.FC<StyledInputFormGroupProps> = (
                 onChange={(v) => onChange(trimEmptyTags(v))}
                 placeholder={placeholder}
                 modules={{
-                    toolbar: [{'list': 'bullet'}],
+                    toolbar: [{'list': 'bullet'}, 'bold'],
                 }}
             />
         </FormGroup>
