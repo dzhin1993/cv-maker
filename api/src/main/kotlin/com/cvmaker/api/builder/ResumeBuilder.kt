@@ -32,7 +32,7 @@ fun buildResume(resume: Resume, imageContent: ByteArray?): ByteArrayOutputStream
 
     addTitle(document, resume)
 
-    val table = Table(floatArrayOf(90f, 300f), true)
+    val table = Table(floatArrayOf(80f, 290f), true)
     table.setFontSize(10f)
 
     addData(table, resume, imageContent)
