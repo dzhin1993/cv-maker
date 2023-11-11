@@ -25,6 +25,9 @@ const UpdateInputFormContainer: React.FC = () => {
             if (imageId) {
                 getImage(imageId)
                     .then(res => dispatch(setImage(res.data)))
+                    .catch(err => {
+                        handleError(dispatch, err)
+                    });
             }
             return Promise.resolve()
         }

@@ -1,6 +1,6 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit'
 
-export interface LoginSlice {
+interface LoginSlice {
     isLogin: boolean
 }
 

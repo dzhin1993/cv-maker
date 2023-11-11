@@ -1,21 +1,12 @@
 import React from 'react'
-import {useNavigate} from 'react-router-dom'
-import {useDispatch} from 'react-redux'
-import {Button, Col, Container, Row} from 'reactstrap'
+import {Col, Container, Row} from 'reactstrap'
 import ResumeTable from '../components/table/ResumeTable'
-import {setData} from '../feutures/resumeInputSlice'
-import {resumeDefault} from '../model/resume'
+import ResumeCreateDropdown from '../components/dropdown/ResumeCreateDropdown'
+import ResumeCreateModal from '../components/modal/ResumeCreateModal'
 
 const ResumeTableContainer = () => {
-    const navigate = useNavigate()
-    const dispatch = useDispatch()
-
-    const handleCreate = () => {
-        dispatch(setData(resumeDefault))
-        navigate('/create')
-    }
-
     return <Container>
+        <ResumeCreateModal/>
         <Row>
             <Col style={{textAlign: "center"}}>
                 <h2>Your resumes</h2>
@@ -23,12 +14,7 @@ const ResumeTableContainer = () => {
         </Row>
         <Row className="centralized" style={{width: 900}}>
             <Col>
-                <Button
-                    onClick={() => handleCreate()}
-                    outline color="primary"
-                >
-                    Create new
-                </Button>
+                <ResumeCreateDropdown/>
             </Col>
 
         </Row>

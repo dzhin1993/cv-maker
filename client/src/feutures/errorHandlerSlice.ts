@@ -4,7 +4,7 @@ import {
 } from '../model/error'
 
 
-export interface ErrorState {
+interface ErrorState {
     error: Error
 }
 
