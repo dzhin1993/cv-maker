@@ -1,6 +1,6 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit'
 
-export interface ImageInputSlice {
+interface ImageInputSlice {
     image: Blob | null
 }
 

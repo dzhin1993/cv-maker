@@ -3,6 +3,7 @@ import resumeTableReducer from './feutures/resumeTableSlice'
 import resumeInputReducer from './feutures/resumeInputSlice'
 import imageInputReducer from './feutures/imageInputSlice'
 import errorHandlerReducer from './feutures/errorHandlerSlice'
+import dropdown from './feutures/dropdownSlice'
 import loginReducer from './feutures/loginSlice'
 
 export const store = configureStore({
@@ -12,6 +13,7 @@ export const store = configureStore({
         errorHandler: errorHandlerReducer,
         resumeTable: resumeTableReducer,
         login: loginReducer,
+        dropdown: dropdown,
     },
     middleware: (getDefaultMiddleware) => getDefaultMiddleware(
         {serializableCheck: false}

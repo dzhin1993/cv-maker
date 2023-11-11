@@ -30,7 +30,7 @@ type IndexedTextInputPayload = {
 }
 
 
-export interface ResumeInputState {
+interface ResumeInputState {
     resume: Resume
 }
 

@@ -1,7 +1,7 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit'
 import {ResumeView} from '../model/resume'
 
-export interface ResumeTableState {
+interface ResumeTableState {
     resumes: ResumeView[]
 }
 

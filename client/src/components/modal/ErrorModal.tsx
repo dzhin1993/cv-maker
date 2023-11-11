@@ -5,8 +5,8 @@ import {toggle} from '../../feutures/errorHandlerSlice'
 import {RootState} from '../../store'
 
 const ErrorModal: React.FC = () => {
-    const {isError, message} = useSelector((state: RootState) => state.errorHandler.error);
-    const dispatch = useDispatch();
+    const {isError, message} = useSelector((state: RootState) => state.errorHandler.error)
+    const dispatch = useDispatch()
 
     const handleToggle = () => {
         dispatch(toggle())
