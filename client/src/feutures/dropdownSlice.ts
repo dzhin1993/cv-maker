@@ -12,14 +12,14 @@ export const dropdownSlice = createSlice({
     name: 'dropdown',
     initialState,
     reducers: {
-        toggle: (state) => {
+        toggleDropdown: (state) => {
             state.dropdownOpen =  !state.dropdownOpen
         },
     }
 })
 
 export const {
-    toggle,
+    toggleDropdown,
 } = dropdownSlice.actions
 
 export default dropdownSlice.reducer

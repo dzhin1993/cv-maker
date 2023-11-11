@@ -4,6 +4,7 @@ import resumeInputReducer from './feutures/resumeInputSlice'
 import imageInputReducer from './feutures/imageInputSlice'
 import errorHandlerReducer from './feutures/errorHandlerSlice'
 import dropdown from './feutures/dropdownSlice'
+import resumeCreateModal from './feutures/resumeCreateModalSlice'
 import loginReducer from './feutures/loginSlice'
 
 export const store = configureStore({
@@ -12,6 +13,7 @@ export const store = configureStore({
         imageInput: imageInputReducer,
         errorHandler: errorHandlerReducer,
         resumeTable: resumeTableReducer,
+        resumeCreateModal: resumeCreateModal,
         login: loginReducer,
         dropdown: dropdown,
     },
