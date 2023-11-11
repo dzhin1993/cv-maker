@@ -6,6 +6,7 @@ import {RootState} from '../../store'
 import {toggleModal} from '../../feutures/resumeCreateModalSlice'
 import {setData} from '../../feutures/resumeInputSlice'
 import {getResume} from '../../api/resumeApi'
+import {handleError} from '../../util/errorUtil'
 
 const ResumeCreateModal: React.FC = () => {
     const isOpen = useSelector((state: RootState) => state.resumeCreateModal.isOpen)
@@ -24,6 +25,9 @@ const ResumeCreateModal: React.FC = () => {
                 dispatch(setData(copy))
                 navigate('/create')
             })
+            .catch(err => {
+                handleError(dispatch, err)
+            });
 
     }
     return (
