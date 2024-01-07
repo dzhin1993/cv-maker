@@ -24,6 +24,7 @@ const ResumeCreateModal: React.FC = () => {
                 const copy = {...data, id: undefined, imageId: undefined}
                 dispatch(setData(copy))
                 navigate('/create')
+                dispatch(toggleModal())
             })
             .catch(err => {
                 handleError(dispatch, err)
